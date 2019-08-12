@@ -1,67 +1,22 @@
 #hero {
+  padding: 50px;
+  text-align: center;
+  height: 50vh;
+  min-height: 300px;
   /* created a semitransparent overlay and applied it to the url img
-  1.0 is completely opaque, 0.0 is completely clear */
+    1.0 is completely opaque, 0.0 is completely clear */
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(images/splash.png);
   background-size: cover;
-  height: 50vh;
-  min-height: 300px;
-  padding: 50px;
   color: aliceblue;
-  text-align: center;
 }
 #hero h1 {
-  font-size: 5rem;
   margin-bottom: 1rem;
+  font-size: 5rem;
   text-shadow: 5px 0px 20px rgba(255, 255, 255, 0.5),
     0px 5px 20px rgba(255, 255, 255, 0.5),
     -5px 0px 20px rgba(255, 255, 255, 0.5),
     0px -5px 20px rgba(255, 255, 255, 0.5);
-    font: 
-    Fonts
-  DIRECTORY
-  FEATURED
-  ARTICLES
-  ABOUT
-    Fonts
-  Directory
-  Featured
-  Articles
-  About
-  flow
-  Type something
-  Viewing 3 of 948 font families
-  Indie Flower
-  Kimberly Geswein (1 style)
-  Waves flung themselves at the blue evening.
-  Sunflower
-  JIKJISOFT (3 styles)
-  She stared through the window at the stars.
-  Gamja Flower
-  YoonDesign Inc (1 style)
-  The spectacle before us was indeed sublime.
-  1
-  Family
-   Selected
-  EMBED
-  CUSTOMIZE
-  EMBEDCUSTOMIZE
-  Load Time: Fast
-  Your Selection
-   
-  Sunflower
-  Load Time: Fast
-  EMBED
-  CUSTOMIZE
-  EMBEDCUSTOMIZE
-  Embed Font
-  To embed your selected fonts into a webpage, copy this code into the <head> of your HTML document.
-  
-  STANDARD @IMPORT
-  <link href="https://fonts.googleapis.com/css?family=Sunflower:300&display=swap" rel="stylesheet">
-  Specify in CSS
-  Use the following CSS rules to specify these families:
-  font-family: 'Sunflower', sans-serif;
 }
 #hero h2 {
   font-size: 2rem;
