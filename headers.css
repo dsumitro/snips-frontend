@@ -1,0 +1,38 @@
+header {
+  text-align: right;
+  background-color: burlywood;
+  /* this is the short cut */
+  padding: 10px 2rem;
+  /* to this
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2rem;
+    padding-bottom 2 rem; */
+  /* this is the short cut */
+  margin: 10px;
+  /* to this
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom 10px; */
+}
+header nav ul li {
+  display: inline-block;
+}
+header nav ul li a {
+  padding: 5px;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+header nav ul li a:hover {
+  color: whitesmoke;
+}
+.default-header {
+  background-color: cornflowerblue;
+}
+
+/* TODO: Look into css units w3schools */
+#competitors {
+  background-color: aqua;
+}
