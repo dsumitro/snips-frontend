@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Sunflower:300&display=swap");
-@import "resets.css";
+@import "./resets.css";
 @import "headers.css";
 @import "hero.css";
+@import "snippets.css";
 html {
   font-family: "Sunflower", "Times New Roman", "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: #ebebec;
 }
