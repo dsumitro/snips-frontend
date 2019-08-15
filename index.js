@@ -4,7 +4,8 @@ import SNIPS from './snippet-data.js';
 const renderSnips = snippets => {
   const snippetHTML = snippets
     .map(
-      snippet => /* html */ ` <div class="snip">
+      snippet => /* html */ ` 
+      <div class="snip">
       <div class="text">
         <h2>${snippet.title}</h2>
         <p>${snippet.description}</p>

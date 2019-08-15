@@ -31,3 +31,8 @@
 .snip pre code {
   border-radius: 0 0 5px 5px;
 }
+.snip pre {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
