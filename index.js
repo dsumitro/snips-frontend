@@ -1,27 +1,24 @@
 import SNIPS from './snippet-data.js';
-
+import { renderSnips, fetchSnippets } from './lib/snippets.js';
+import { search } from './lib/search.js';
 // map over the SNIPS
-const renderSnips = snippets => {
-  const snippetHTML = snippets
-    .map(
-      snippet => /* html */ ` 
-      <div class="snip">
-      <div class="text">
-        <h2>${snippet.title}</h2>
-        <p>${snippet.description}</p>
-      </div>
-      <pre>
-        <code class="${snippet.language}">${he.encode(snippet.code)}</code>
-      </pre>
-    </div>`
-    )
-    .join('');
-  const snippetsElem = document.getElementById('snippets');
-  snippetsElem.innerHTML = snippetHTML;
-};
-renderSnips(SNIPS);
+fetchSnippets().then(snips => {
+  renderSnips(snips);
+});
 
-hljs.initHighlightingOnLoad();
+document.getElementById('search-bar').addEventListener('submit', search);
+
+// const searchForm = document.getElementById('search-bar');
+
+// searchForm.addEventListener('submit', event => {
+//   const searchText = event.target['search-text'].value;
+//   event.preventDefault();
+//   search(searchText.value);
+// });
+
+// hljs.initHighlightingOnLoad();
+// highlightSnips();
+
 //  transform that snip into html
 //  put HTML right into #snippets
 
