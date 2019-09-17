@@ -1,0 +1,4 @@
+section #createSnip {
+  display: grid;
+  grid-template: 3/3;
+}

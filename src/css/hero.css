@@ -1,0 +1,24 @@
+#hero {
+  padding: 50px;
+  text-align: center;
+  height: 50vh;
+  min-height: 300px;
+  /* created a semitransparent overlay and applied it to the url img
+    1.0 is completely opaque, 0.0 is completely clear */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/splash.png");
+  background-size: cover;
+  color: aliceblue;
+}
+#hero h1 {
+  margin-bottom: 1rem;
+  font-size: 5rem;
+  text-shadow: 5px 0px 20px rgba(255, 255, 255, 0.5),
+    0px 5px 20px rgba(255, 255, 255, 0.5),
+    -5px 0px 20px rgba(255, 255, 255, 0.5),
+    0px -5px 20px rgba(255, 255, 255, 0.5);
+}
+#hero h2 {
+  font-size: 2rem;
+  text-shadow: rgba(0, 0, 0, 0.5);
+}
