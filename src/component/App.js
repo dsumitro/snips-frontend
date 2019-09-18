@@ -1,5 +1,4 @@
 import React from "react";
-import "../css/App.css";
 import "../css/style.css";
 import SnipList from "./snipList";
 import SearchBar from "./SearchBar";
@@ -23,7 +22,10 @@ class App extends React.Component {
 
   createSnippets = async snipData => {
     await axios.post("http://localhost:5000/api/snippets", snipData);
-    this.componentDidMount();
+    const { data } = await axios.get("http://localhost:5000/api/snippets");
+    this.setState({
+      snippets: data
+    });
   };
 
   fetchSnippets = async searchText => {

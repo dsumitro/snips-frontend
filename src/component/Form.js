@@ -32,10 +32,11 @@ export default class Form extends React.Component {
   render() {
     return (
       <section id="createSnip">
-        <h2>Create a Snip!</h2>
+        <h3>Create a Snip!</h3>
         <form id="newSnip" onSubmit={this.handleSubmit}>
           <div>
             Title
+            <br />
             <input
               type="text"
               id="title"
@@ -46,6 +47,7 @@ export default class Form extends React.Component {
           </div>
           <div>
             Language
+            <br />
             <select
               name="language"
               id="language"
@@ -60,22 +62,20 @@ export default class Form extends React.Component {
           </div>
           <div>
             Description
+            <br />
             <textarea
               name="description"
               id="description"
-              cols="30"
-              rows="10"
               value={this.state.description}
               onChange={event => this.handleChange(event, "description")}
             ></textarea>
           </div>
           <div>
             Code
+            <br />
             <textarea
               name="code"
               id="code"
-              cols="30"
-              rows="10"
               value={this.state.code}
               onChange={event => this.handleChange(event, "code")}
             ></textarea>

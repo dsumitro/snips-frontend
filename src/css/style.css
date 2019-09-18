@@ -5,6 +5,8 @@
 @import "hero.css";
 @import "search.css";
 @import "resets.css";
+@import "App.css";
+@import "create.css";
 
 html {
   font-family: "Montserrat", sans-serif;
