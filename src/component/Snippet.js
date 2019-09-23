@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 import SnipList from "./snipList";
 import SearchBar from "./SearchBar";
 import Form from "./Form";

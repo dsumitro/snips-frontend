@@ -8,6 +8,8 @@ import Snippet from "./Snippet";
 import Account from "./Account";
 import Home from "./Home";
 import FOUROHFOUR from "./FOUROHFOUR";
+import Signup from "./Signup";
+import Login from "./Login";
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -25,6 +27,8 @@ class App extends React.Component {
           <Route path="/about" exact component={About} />
           <Route path="/snippets" component={Snippet} />
           <Route path="/account" exact component={Account} />
+          <Route path="/signup" exact component={Signup} />
+          <Route path="/login" exact component={Login} />
           <Route component={FOUROHFOUR} />
         </Switch>
       </Router>
